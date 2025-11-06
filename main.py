@@ -22,7 +22,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 slack_client = WebClient(token=SLACK_BOT_TOKEN)
 ai_client = OpenAI(api_key=OPENAI_API_KEY)
 
-# Fetch last N days of messages from Slack
+# Fetch last N days of messages
 def fetch_messages(channel_id, days=7, limit=200):
     # get timestamp for 7 days ago
     oldest = (datetime.now(timezone.utc) - timedelta(days=days)).timestamp()
