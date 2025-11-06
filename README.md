@@ -24,10 +24,10 @@ git clone https://github.com/<your-username>/slack-weekly-summary.git
 cd slack-weekly-summary
 
 ### Create a virtual env
-#### For MacOS/Linux:
-python -m venv .venv
+- For MacOS/Linux:    
+python -m venv .venv       
 source .venv/bin/activate
-#### For Windows:
+- For Windows:     
 .venv\Scripts\activate
 
 ### Install dependancies
